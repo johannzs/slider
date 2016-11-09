@@ -1,0 +1,106 @@
+body {
+	background:green;
+	#wrapper {
+		.slider-prev, .slider-next {
+			position:absolute;
+			top:50%;
+			transform:translateY(-50%);
+			img {
+				width:100px;
+			}
+		}
+		.slider-prev {
+			left:0;
+		}
+		.slider-next {
+			right:0;
+		}
+		.slider-container {
+			position:relative;
+			margin:0 auto;
+			.bullet-navigation {
+				height:50px;
+				position: absolute;
+			    left: 50%;
+			    transform: translateX(-50%);
+				a {
+					width: 10px;
+				    height: 10px;
+				    display: inline-block;
+				    background: #ddd;
+				    overflow: hidden;
+				    text-indent: -9999px;
+				    border-radius: 50%;
+				    margin-left:10px;
+				    margin-top:20px;
+				    &.active {
+				    	background: #999;
+				    }
+				    &:last-child {
+				    margin-right:10px;
+				    }
+				}
+			}
+			ul {
+				padding:0;
+				margin:0;
+				height:92%;
+				li {
+					float:left;
+					width:1000px;
+					height:613px;
+					margin:0;
+					padding:0;
+					list-style:none;
+					.description {
+						background-color: rgba(0, 0, 0, 0.5);
+						position:absolute;
+						bottom:50px;
+						width:940px;
+						font-family:Arial, Helvetica, sans-serif;
+						color:#fff;
+						padding:30px;
+						max-width:1000px;
+						max-height:170px;
+						h2 {
+							margin:0;
+						}
+						div {
+							background:url(../img/star.svg) #fff 0 4px;
+							width:200px;
+							height:50px;
+							position:absolute;
+							top:15px;
+							right:15px;
+							border-radius:10px;
+						}
+
+						.popularity-0 {
+							width:0;
+						}
+
+						.popularity-1 {
+							width:40px;
+						}
+
+						.popularity-2 {
+							width:80px;
+						}
+
+						.popularity-3 {
+							width:120px;
+						}
+
+						.popularity-4 {
+							width:160px;
+						}
+
+						.popularity-5 {
+
+						}
+					}
+				}
+			}
+		}
+	}
+}
