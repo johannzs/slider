@@ -45,7 +45,7 @@ $(document).ready(function() {
 			}
 		});
 
-		$('.slider-container').append($('<div class='bullet-navigation'/>'));
+		$('.slider-container').append($('<div class="bullet-navigation"/>'));
 
 		$('li').each(function(i){
 			$('.bullet-navigation').append($('<a/>').text((i+1)));
