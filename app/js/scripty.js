@@ -68,5 +68,23 @@ $(document).ready(function() {
 				marginLeft : - (Reference.width() * Cpt)
 			});
 		});
+		$(document).keydown(function(){
+			if(event.keyCode == 37){ 
+				if(Cpt > 0) {
+					Cpt--;
+					$("#wrapper ul").stop(true).animate({
+						marginLeft : - (Reference.width() * Cpt)
+					});
+				}
+			}
+			else if(event.keyCode == 39) {
+				if(Cpt < (NbElement-1) ) {
+					Cpt++;
+					$('#wrapper ul').stop(true).animate({
+						marginLeft : - (Reference.width() * Cpt)
+					});
+				}
+			}
+		});
 	});
 });
